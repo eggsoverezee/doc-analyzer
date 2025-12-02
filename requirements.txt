@@ -1,1 +1,8 @@
-
+fastapi
+uvicorn[standard]
+langchain
+langgraph
+openai
+python-multipart
+pydantic
+pypdf
