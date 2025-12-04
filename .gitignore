@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+
+# OS files
+.DS_Store
+
+# FastAPI / Uvicorn debug
+.env
+.env.*
+
+# Backup
+*.swp
+*.swo
