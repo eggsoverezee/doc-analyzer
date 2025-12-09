@@ -5,6 +5,7 @@ from typing_extensions import NotRequired
 from langchain_openai import ChatOpenAI
 from langgraph.graph import StateGraph, END
 
+from .config import MODEL_NAME
 
 class DocState(TypedDict):
     content: str
@@ -12,7 +13,7 @@ class DocState(TypedDict):
     metadata: NotRequired[Dict[str, Any]]
 
 
-llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.2)
+llm = ChatOpenAI(model=MODEL_NAME, temperature=0.2)
 
 
 def summarize_text(state: DocState) -> DocState:
